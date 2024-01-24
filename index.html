@@ -43,9 +43,9 @@
     </style>
   </head>
   <body>
-    <header class="container mx-auto px-5 md:px-0">
+    <header class="container mx-auto px-5 md:px-0 mt-10">
       <!-- nav bar starts  -->
-      <nav class="mb-12">
+      <nav class="mb-10">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -82,7 +82,10 @@
               Hockey<span class="text-[#FF4240]">'</span>s
             </h1>
           </div>
-          <div class="hidden navbar-center lg:flex">
+
+          <!-- navbar middle starts  -->
+
+          <div class="hidden navbar-center lg:flex space-x-12">
             <ul class="px-1 text-base menu menu-horizontal">
               <li>
                 <a><span class="text-[#FF4240]">Home</span></a>
@@ -93,6 +96,9 @@
               <li><a>Contact</a></li>
             </ul>
           </div>
+
+          <!-- navbar middle ends  -->
+
           <div class="navbar-end">
             <div><img src="./images/Frame.png" alt="" /></div>
             <button class="btn bg-[#FF4240] text-sm font-bold text-white ml-4">
@@ -108,11 +114,15 @@
       <section>
         <div class="lg:relative">
           <div class="carousel w-full">
+            <!-- slide 1  -->
+
             <div id="slide1" class="carousel-item relative w-full">
               <img src="./images/1.png" class="w-full" />
-              <div class="absolute bottom-10 left-10">
+              <div
+                class="absolute bottom-1 left-1/2 -translate-x-1/2 lg:bottom-10 lg:left-10 lg:translate-x-0"
+              >
                 <a
-                  href="#slide4"
+                  href="#slide3"
                   class="btn btn-circle bg-[#131318] text-white hover:text-[#131318]"
                   ><i class="fa-solid fa-angle-left"></i
                 ></a>
@@ -123,11 +133,34 @@
                 ></a>
               </div>
             </div>
+
+            <!-- slide 2 -->
             <div id="slide2" class="carousel-item relative w-full">
               <img src="./images/1.png" class="w-full" />
-              <div class="absolute bottom-10 left-10">
+              <div
+                class="absolute bottom-1 left-1/2 -translate-x-1/2 lg:bottom-10 lg:left-10 lg:translate-x-0"
+              >
                 <a
                   href="#slide1"
+                  class="btn btn-circle bg-[#131318] text-white hover:text-[#131318]"
+                  ><i class="fa-solid fa-angle-left"></i
+                ></a>
+                <a
+                  href="#slide3"
+                  class="btn btn-circle bg-[#131318] text-white hover:text-[#131318]"
+                  ><i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- slide 3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./images/1.png" class="w-full" />
+              <div
+                class="absolute bottom-1 left-1/2 -translate-x-1/2 lg:bottom-10 lg:left-10 lg:translate-x-0"
+              >
+                <a
+                  href="#slide2"
                   class="btn btn-circle bg-[#131318] text-white hover:text-[#131318]"
                   ><i class="fa-solid fa-angle-left"></i
                 ></a>
@@ -140,7 +173,7 @@
             </div>
           </div>
           <div
-            class="bg-black p-8 text-white space-y-4 lg:max-w-[550px] rounded-2xl lg:absolute right-8 bottom-8"
+            class="bg-black p-8 mt-4 text-white space-y-4 lg:max-w-[550px] rounded-2xl lg:absolute right-8 bottom-8"
           >
             <h3 class="text-2xl font-extrabold">
               Meet all the heroes from the field
